@@ -3,7 +3,7 @@ MD features supported:
 - code blocks
 - emphasis
 - links
-- picrures
+- pictures
 - lists (bullet points, ordered list, TODO list)
 - thematic break
 - block quotes
