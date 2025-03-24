@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+  <title>{{ title | default("Documentation") }}</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/assets/pdf365.bmp" type="image/x-icon" >
 </head>
 
 <body>
-  <h1>{{ title }}</h1>
+  <header>
+    <nav>
+      <a href="/docs/">Documentation Home</a>
+    </nav>
+  </header>
   <main>
-    {{ content | rewriteLinks }}
+    {{ content | rewriteLinks | safe }}
   </main>
-
-  <footer>
-    <p>Generated with Eleventy</p>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Josef Sevcik. All rights reserved.</p>
+    <p>
+      <a href="https://github.com/ejs-sol/pdf365" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20">
+        View our GitHub Repository
+      </a>
+    </p>
   </footer>
 </body>
 </html>

@@ -1,3 +1,7 @@
+---
+title: PDF Processing API
+---
+
 # PDF Processing API
 
 ## Overview
