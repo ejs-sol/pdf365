@@ -11,7 +11,7 @@ title: Overview
   - [PDF processing API description](./PdfProcessingApi.md)
   - [Documentation in OpenAPI format](/api-docs/v1)
   - [SwaggerUI](/swagger-ui/)
-  - [Postman example collection](/postman/)
+  - [Postman example collection](https://www.postman.com/docking-module-participant-89690239/pdf365-api/overview)
 - [Features and limitations](./FeaturesAndLimitations.md)
 
 
