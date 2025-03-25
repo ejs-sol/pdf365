@@ -7,6 +7,9 @@ title: PDF Processing API
 ## Overview
 The PDF Processing API provides various endpoints to inspect, modify, and manipulate PDF documents. The available operations include inspecting metadata, extracting pages, splitting, merging, and adding attachments to PDFs.
 
+For more up-to-date documentation and usage examples, please refer to the OpenAPI and our [Postman collection](/postman).
+
+
 ## Endpoints
 
 ### 1. Inspect PDF Metadata

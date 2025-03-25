@@ -2,7 +2,7 @@
 title: Overview
 ---
 
-# pdf365 Documentation overview
+# *pdf365* Documentation overview
 
 - [Overview](./Overview.md)
 - [Getting started](./GettingStarted.md)
@@ -11,6 +11,7 @@ title: Overview
   - [PDF processing API description](./PdfProcessingApi.md)
   - [Documentation in OpenAPI format](/api-docs/v1)
   - [SwaggerUI](/swagger-ui/)
+  - [Postman example collection](/postman/)
 - [Features and limitations](./FeaturesAndLimitations.md)
 
 

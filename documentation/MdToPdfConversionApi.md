@@ -7,6 +7,8 @@ title: "Markdown to PDF Conversion API"
 ## Overview
 This API allows converting Markdown-formatted input into a PDF document, either as a standalone document or by appending content to an existing PDF.
 
+For more up-to-date documentation and usage examples, please refer to the OpenAPI and our [Postman collection](/postman).
+
 ## Endpoints
 
 ### Convert Markdown to a New PDF
