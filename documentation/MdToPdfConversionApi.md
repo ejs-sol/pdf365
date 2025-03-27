@@ -45,6 +45,8 @@ Converts Markdown input into a standalone PDF document.
 **Description:**
 Adds Markdown-formatted input into an existing PDF document, useful for adding headers, watermarks, or filling forms.
 
+Alternatively, blank document of the given size and number of pages can be created. Useful when creating structured documents like invoices.
+
 **Request Body Options:**
 1. **Multipart/form-data**
    - `controlDocument`: Contains optional style & font configurations, output configuration, and reference to the Markdown fragments.
@@ -116,3 +118,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
+
+## Contact & Support
+
+For any issues or support requests, visit our [GitHub Repository](https://github.com/ejs-sol/pdf365)

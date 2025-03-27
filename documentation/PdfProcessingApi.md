@@ -70,8 +70,8 @@ Merges multiple PDF files into a single document.
 **Request:**
 - **Content-Type:** `multipart/form-data`
 - **Parameters:**
-  - `fileList` - List of filenames to be merged
-  - `files` - Actual PDF files
+  - `fileList` - Ordered list of filenames to be merged.
+  - `<filename>` - Optional attachments (PDF files) if referenced from the file list with `file://` schema
 
 **Response:**
 - **Content-Type:** `application/pdf`
@@ -108,6 +108,61 @@ The API returns standard HTTP status codes:
 
 ---
 
+### 6. Protect a PDF with a password
+**Endpoint:** `/api/v1/pdf/protect`
+
+**Description:**
+Protect the given file with a password. The recipient can open the file only after entering the password.
+
+**Request:**
+- **Content-Type:** `application/pdf`
+- **Request parameter:**
+  - `password`  
+
+**Response:**
+- **Content-Type:** `application/pdf`
+- protected PDF
+
+---
+
+### 7. Un-protect a PDF with a password
+**Endpoint:** `/api/v1/pdf/protect`
+
+**Description:**
+Remove password protection from a file
+
+**Request:**
+- **Content-Type:** `application/pdf`
+- **Request parameter:**
+  - `password`
+
+**Response:**
+- **Content-Type:** `application/pdf`
+- un-protected PDF
+
+---
+
+### 8. Un-protect a PDF with a password
+**Endpoint:** `/api/v1/pdf/visualSignature`
+
+**Description:**
+Add visual signature (ETSI CAdES detached) to a pdf file. 
+
+**Request:**
+- **Content-Type:** `multipart/form-data` / `application/json`
+- **Parameters:**
+  - `controlDocument` - The object describing how to construct the signature
+  - `<filename>` - Optional attachments, when referenced with `file://` schema
+
+**Response:**
+- **Content-Type:** `application/pdf`
+- signed PDF
+
+*Note:* make sure the virtual machine pdf365 can access the specified wallet and the required priviledges has been set.
+
+---
+
+
 ## Contact & Support
-For any issues or support requests, please contact the API maintainers or refer to the documentation for further details.
+For any issues or support requests, visit our [GitHub Repository](https://github.com/ejs-sol/pdf365)
 
