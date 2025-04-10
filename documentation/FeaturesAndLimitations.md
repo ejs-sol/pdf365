@@ -14,8 +14,9 @@ MD features supported:
 - lists (bullet points, ordered list, TODO list)
 - thematic break
 - block quotes
+- tables (including cell spaning, column alignment definition & multi-row headers)
+
 MD features missing (ordered by priority):
-- tables
 - subscript/superscript
 - math formulas
 - footnotes
