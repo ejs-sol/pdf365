@@ -40,7 +40,7 @@ Converts Markdown input into a standalone PDF document.
 
 ### Append Markdown to an Existing PDF
 
-#### `POST /api/v1/md/convert/toExisting`
+#### `POST /api/v1/md/append`
 
 **Description:**
 Adds Markdown-formatted input into an existing PDF document, useful for adding headers, watermarks, or filling forms.
@@ -86,6 +86,14 @@ Alternatively, blank document of the given size and number of pages can be creat
 *Please note: the content of the `mdTemplate` will be printed into the window defined in `mdFragment` with `x`, `y`, `width` and `height` variables.
 The x and y coordinates define the lower left corner of the window, which expands to the right and to the top by width and height. The content is then printed from the top of the window using the styling rules.*
 
+### Get default config
+
+#### `GET /api/v1/md/config/convert`
+
+#### `GET /api/v1/md/config/append`
+
+**Description:**
+Returns the effective default configuration used by the engine. Use this as a starting point to customize behavior.
 
 ## Constraints & Limitations
 - Maximum request body size: **50MB**.
