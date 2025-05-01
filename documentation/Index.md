@@ -10,6 +10,7 @@ Welcome to the pdf365 API documentation collection.
 - [pdf365 overview](./Overview.md)
 - [Getting started guide](./GettingStarted.md)
 - Howto
+  - [Watermark](./Watermark.md) 
   - [Tables](./Tables.md)
 - APIs - Explore our APIs designed to help you with PDF processing and Markdown conversion.
   - [MD Conversion API description](./MdToPdfConversionApi.md). Brief guide to pdf365 API.

@@ -69,11 +69,13 @@ Alternatively, blank document of the given size and number of pages can be creat
     "mdFragment": [
         {
             "pageNumbers": "1-70",
-            "x": 240,
-            "y": 200,
-            "width": 10000,
-            "height": 100,
-            "rotationDegrees": 60,
+            "position": {
+              "x": 240,
+              "y": 200,
+              "width": 10000,
+              "height": 100,
+              "rotationDegrees": 60  
+            },
             "dpi": 150,
             "printToBackground": true,
             "mdTemplate": "# Draft v0.1"
