@@ -1,3 +1,8 @@
+---
+title: pdf365 Privacy Policy
+---
+
+
 Effective Date: April 18, 2025
 
 pdf365 respects your privacy. We do not collect, store, or process any personal data beyond what is technically required to perform the requested PDF processing tasks.
