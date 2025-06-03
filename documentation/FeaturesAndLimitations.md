@@ -4,6 +4,9 @@ title: "Features and limitations"
 
 # Features and limitations
 
+Convert MD document to PDF file
+Print MD fragment into an existing document (e.g. for watermarks, headers, footers, etc)
+Print multiple MD fragments on one or more pages to construct complex documents like invoices
 
 MD features supported:
 - headings
@@ -31,6 +34,7 @@ Text formatting and PDF generation features:
 - text rotation
 - repeat fragment for defined pages
 - ligatures substitution
+- hyphenation for latin and cyrilic (for a comprehensive list of languages supported refer to the [hypherator library](https://github.com/ejossev/hypherator-java))
 
 Known limitations
 - Only initial support for complex scripts - not all font features are supported (especially GPOS, baseline and kerning)
