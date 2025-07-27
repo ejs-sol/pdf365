@@ -19,26 +19,28 @@ MD features supported:
 - block quotes
 - tables (including cell spanning, column alignment definition & multi-row headers)
 
-MD features missing (ordered by priority):
+MD features missing (ordered by priority, as we will ad them):
+- footnotes
 - subscript/superscript
 - math formulas
-- footnotes
 
 Text formatting and PDF generation features:
-- possibility to define own attributes, from font to margins, for each text style
+- out-of-the box support for all major scripts: latin, cyrillic, greek, arabic, hebrew, CJK, indic (tamil, devanagari, bengali)
+- other scripts can be added with user supplied OTF fonts
+- full shaping support
+- possibility to define own styles, from font to margins, for each text style
 - full support for Bidi algorithm
+- justification
 - automatic selection of font based on supported glyphs (so more than one font can be added for each style)
 - advanced line-break identification heuristic algorithm, works also for mixed-language texts where line breaks are not obvious
-- font subsetting
+- font subsetting into the resulting PDF
 - print to the foreground/background
 - text rotation
 - repeat fragment for defined pages
-- ligatures substitution
-- hyphenation for latin and cyrilic (for a comprehensive list of languages supported refer to the [hypherator library](https://github.com/ejossev/hypherator-java))
+- hyphenation for latin, cyrillic and indic languages (for a comprehensive list of languages supported refer to the [hypherator library](https://github.com/ejossev/hypherator-java))
+- advanced typesetting features like orphan&widow prevention
 
 Known limitations
-- Only initial support for complex scripts - not all font features are supported (especially GPOS, baseline and kerning)
-- Initial support for BIDI texts - not all font features are supported (especially the GSUB for RTL and justify using Kashida for Arabic)
 - Links are not supported for rotated texts
 
-Missing something? Something does not work as expected? Feel free to use [GitHub Issues](https://github.com/ejs-sol/pdf365/issues) to let us know. 
+Missing something? Anything does not work as expected? Feel free to use [GitHub Issues](https://github.com/ejs-sol/pdf365/issues) to let us know. 

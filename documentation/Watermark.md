@@ -4,7 +4,7 @@ title: "Howto: Tables"
 
 # Watermark
 
-Adding watermark to your documents is easy. Just follow these easy steps: 
+Adding watermark to your documents is straightforward. Just follow these steps: 
 
 #### 1. First, get your document ready.
 

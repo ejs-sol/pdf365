@@ -4,13 +4,20 @@ title: "Getting started"
 
 # Getting started
 
+## Try it for free
+
+You can start *pdf365.cloud* in Azure for free*. We offer you 30 days evaluation on our VM images. 
+
+-----
+*This applies to the costs of the *pdf365* license. For running the VM, you can use Azure credits, when applicable.
+
 ## Starting the VMs
 
-*pdf365* is available as VM images (BYOL). First you have to start the VMs:
+*pdf365* is available as VM images. First you have to start the VMs:
 
 ### Azure
 
-Instantiate *pdf365* on the Azure Marketplace.
+Instantiate [*pdf365*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pdf356.pdf365?tab=overview) on the Azure Marketplace. We recommend VM with at least 4GB of memory to fully enjoy all the features. 
 
 ### Google Cloud / AWS / Docker
 
