@@ -5,9 +5,19 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://pdf365.cloud/</loc>
+        <lastmod>2025-07-29T14:52:16+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://pdf365.cloud/demo.html</loc>
+        <lastmod>2025-05-07T15:13:19+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
     {% for page in collections.all %}
         <url>
-            <loc>{{ site.url }}{{ page.url | url }}</loc>
+            <loc>{{ site.url }}{{ page.url | url }}index.html</loc>
             <lastmod>{{ page.date.toISOString() }}</lastmod>
         </url>
     {% endfor %}

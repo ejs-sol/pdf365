@@ -17,7 +17,9 @@ You can start *pdf365.cloud* in Azure for free*. We offer you 30 days evaluation
 
 ### Azure
 
-Instantiate [*pdf365*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pdf356.pdf365?tab=overview) on the Azure Marketplace. We recommend VM with at least 4GB of memory to fully enjoy all the features. 
+Instantiate [*pdf365*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pdf356.pdf365?tab=overview) on the Azure Marketplace. We recommend VM with at least 4GB of memory to fully enjoy all the features.
+
+Now *pdf365* listens on port 7000.
 
 ### Google Cloud / AWS / Docker
 
