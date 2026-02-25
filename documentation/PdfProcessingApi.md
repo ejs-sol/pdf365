@@ -26,6 +26,13 @@ Extracts metadata and structural information from a given PDF file.
 - **Content-Type:** `application/json`
 - JSON object containing metadata information
 
+**Example curl:**
+```bash
+curl -X POST https://<service_address>:7000/api/v1/pdf/inspect \
+  -H 'Content-Type: application/pdf' \
+  --data-binary @input.pdf
+```
+
 ---
 
 ### 2. Extract Pages from PDF
@@ -77,6 +84,15 @@ Merges multiple PDF files into a single document.
 - **Content-Type:** `application/pdf`
 - Merged PDF document
 
+**Example curl:**
+```bash
+curl -X POST https://<service_address>:7000/api/v1/pdf/merge \
+  -F 'fileList=["file://a.pdf","file://b.pdf"]' \
+  -F 'a.pdf=@a.pdf;type=application/pdf' \
+  -F 'b.pdf=@b.pdf;type=application/pdf' \
+  -o merged.pdf
+```
+
 ---
 
 ### 5. Add Attachments to a PDF
@@ -123,10 +139,18 @@ Protect the given file with a password. The recipient can open the file only aft
 - **Content-Type:** `application/pdf`
 - protected PDF
 
+**Example curl:**
+```bash
+curl -X POST 'https://<service_address>:7000/api/v1/pdf/protect?password=secret' \
+  -H 'Content-Type: application/pdf' \
+  --data-binary @input.pdf \
+  -o protected.pdf
+```
+
 ---
 
 ### 7. Un-protect a PDF with a password
-**Endpoint:** `/api/v1/pdf/protect`
+**Endpoint:** `/api/v1/pdf/unprotect`
 
 **Description:**
 Remove password protection from a file
@@ -140,9 +164,17 @@ Remove password protection from a file
 - **Content-Type:** `application/pdf`
 - un-protected PDF
 
+**Example curl:**
+```bash
+curl -X POST 'https://<service_address>:7000/api/v1/pdf/unprotect?password=secret' \
+  -H 'Content-Type: application/pdf' \
+  --data-binary @input.pdf \
+  -o unprotected.pdf
+```
+
 ---
 
-### 8. Un-protect a PDF with a password
+### 8. Add a visual signature
 **Endpoint:** `/api/v1/pdf/visualSignature`
 
 **Description:**
@@ -165,4 +197,3 @@ Add visual signature (ETSI CAdES detached) to a pdf file.
 
 ## Contact & Support
 For any issues or support requests, visit our [GitHub Repository](https://github.com/ejs-sol/pdf365)
-

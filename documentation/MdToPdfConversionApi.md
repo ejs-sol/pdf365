@@ -38,6 +38,14 @@ Converts Markdown input into a standalone PDF document.
 }
 ```
 
+**Example curl:**
+```bash
+curl -X POST https://<service_address>:7000/api/v1/md/convert \
+  -H 'Content-Type: application/json' \
+  -d @controlDocument.json \
+  -o output.pdf
+```
+
 ### Append Markdown to an Existing PDF
 
 #### `POST /api/v1/md/append`
@@ -88,6 +96,14 @@ Alternatively, blank document of the given size and number of pages can be creat
 *Please note: the content of the `mdTemplate` will be printed into the window defined in `mdFragment` with `x`, `y`, `width` and `height` variables.
 The x and y coordinates define the lower left corner of the window, which expands to the right and to the top by width and height. The content is then printed from the top of the window using the styling rules.*
 
+**Example curl (multipart):**
+```bash
+curl -X POST https://<service_address>:7000/api/v1/md/append \
+  -F 'controlDocument=@controlDocument.json;type=application/json' \
+  -F 'document.pdf=@input.pdf;type=application/pdf' \
+  -o output.pdf
+```
+
 ### Get default config
 
 #### `GET /api/v1/md/config/convert`
@@ -96,6 +112,21 @@ The x and y coordinates define the lower left corner of the window, which expand
 
 **Description:**
 Returns the effective default configuration used by the engine. Use this as a starting point to customize behavior.
+
+### Presets
+
+#### `GET /api/v1/md/presets`
+Returns a list of available preset names.
+
+#### `GET /api/v1/md/preset/convert`
+Returns the default convert preset.
+
+#### `GET /api/v1/md/preset/convert/{presetName}`
+Returns a named convert preset configuration.
+
+## Units & Values
+- Length values accept numbers (points) or strings with units: `pt`, `%`, `cm`, `mm`, `in`.
+- Percent values are interpreted relative to the page or container size, depending on the field.
 
 ## Constraints & Limitations
 - Maximum request body size: **50MB**.

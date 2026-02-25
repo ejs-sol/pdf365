@@ -43,4 +43,8 @@ Text formatting and PDF generation features:
 Known limitations
 - Links are not supported for rotated texts
 
+Constraints
+- Maximum request body size: 50MB
+- Supported font format: TTF only
+
 Missing something? Anything does not work as expected? Feel free to use [GitHub Issues](https://github.com/ejs-sol/pdf365/issues) to let us know. 

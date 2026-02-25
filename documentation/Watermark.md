@@ -1,5 +1,5 @@
 ---
-title: "Howto: Tables"
+title: "Howto: Watermark"
 ---
 
 # Watermark
@@ -49,6 +49,11 @@ As the third step, we define where we want to print the watermark. We define a p
 
 Last, we tell the pdf365 engine to print into the background with `"printToBackground": true,`, and the pages to print to with `pageNumber` or `pageNumbers` respectively. 
 *Note: You can specify ranges (e.g. `"2-5"`), `all`, `even`, `odd` or list of individual pages (e.g. `[1,2,5]`)*
+
+### Units & positioning
+Length values accept numbers (points) or strings with units: `pt`, `%`, `cm`, `mm`, `in`.  
+Percent values are interpreted relative to the page or container size, depending on the field.  
+Anchors define which point of the window is placed at the `x`,`y` position (e.g. `CENTER_LEFT`).
 
 #### 3. Put it all together as a rest request.
 

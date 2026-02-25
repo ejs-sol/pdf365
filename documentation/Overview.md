@@ -6,10 +6,10 @@ title: Overview
 
 *pdf365* is an ultimate toolbox for PDF generation and processing. Our goal is to provide all the necessary tools for creating, modifying, processing, encrypting, and signing documents in the PDF format. 
 
-We focus on delivering high-quality, print-ready output, in any major language and script, while ensuring ease of use. For us, typesetting is not just a word. We believe that in order to deliver the message, just typing the letters is not enough. The document needs to be in harmony, its content match its style, and that the visual aesthetic is as important as the message itself. More than that, the proper visual ephasizes the message, prepares the reader for the message and do not distract them. 
+We focus on delivering high-quality, print-ready output, in any major language and script, while ensuring ease of use. For us, typesetting is not just a word. We believe that in order to deliver the message, just typing the letters is not enough. The document needs to be in harmony, its content match its style, and that the visual aesthetic is as important as the message itself. More than that, the proper visual emphasizes the message, prepares the reader for the message and does not distract them.
 Therefore, we invest heavily in constantly improving the visual quality of our documents. You would be surprised how nice can MD tables be rendered. Orphans and widows? You won't find them in our documents.
 
-And we invest heavily in providing consistent visual quality in as many languages and typic system as we can, and the list is growing. LTR or RTL? No problem. Mixed texts? Sure. Language-sensitive line breaks? You have it.
+And we invest heavily in providing consistent visual quality in as many languages and writing systems as we can, and the list is growing. LTR or RTL? No problem. Mixed texts? Sure. Language-sensitive line breaks? You have it.
 
 
 
