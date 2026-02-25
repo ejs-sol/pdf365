@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/assets/pdf365.ico" type="image/x-icon" >
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN2WRGW25F"></script>
@@ -18,25 +21,48 @@
   gtag('config', 'G-QN2WRGW25F');
 </script>
 <body>
-  <header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/docs/Index/index.html">Documentation Home</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/index.html" class="brand">
+        <img src="/assets/pdf365.png" alt="pdf365" class="logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="/usecases.html">Use cases</a>
+        <a href="/features.html">Features</a>
+        <a href="/docs/">Docs</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="/demo.html" class="button button-primary">Try the demo</a>
+      </div>
+    </div>
   </header>
-  <main>
-    {{ content | rewriteLinks | safe }}
+
+  <main class="section">
+    <div class="container">
+      {{ content | rewriteLinks | safe }}
+    </div>
   </main>
   
   <footer class="footer">
-    <p>&copy; 2025 Josef Sevcik and EJS Solutions s.r.o. All rights reserved.</p>
-    <p>
-      <a href="https://github.com/ejs-sol/pdf365" target="_blank">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20">
-        View our GitHub Repository
-      </a>
-    </p>
-    <p><a href="/docs/Privacy/index.html">Privacy policy</a></p>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-title">pdf365.cloud</div>
+        <p>High-quality, multi-script PDF generation for developers who care about correctness.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/docs/">Docs</a>
+        <a href="/demo.html">Demo</a>
+        <a href="/features.html">Features</a>
+        <a href="/usecases.html">Use cases</a>
+        <a href="/docs/Privacy/index.html">Privacy</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/ejs-sol/pdf365" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2025 Josef Sevcik and EJS Solutions s.r.o. All rights reserved.</span>
+    </div>
   </footer>
 </body>
 </html>
